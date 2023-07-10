@@ -32,6 +32,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        objLoginBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                Check for correctness of username and password
+
+                //            Create an intent object
+                Intent objLoginIntent = new Intent(MainActivity.this, HomeActivity.class);
+//            Start the Activity
+                startActivity(objLoginIntent);
+            }
+        });
+
 
     }
 }

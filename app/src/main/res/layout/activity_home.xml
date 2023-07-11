@@ -11,11 +11,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <EditText
+<!--        <EditText-->
+<!--            android:layout_width="350dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:inputType="text"-->
+<!--            android:hint="Search"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_marginStart="30dp"/>-->
+
+        <SearchView
+            android:id="@+id/sbMasterSearcher"
             android:layout_width="350dp"
-            android:layout_height="60dp"
-            android:inputType="text"
-            android:hint="Search"
+            android:layout_height="50dp"
+            android:queryHint="Search the location"
+            android:iconifiedByDefault="false"
             android:layout_marginTop="15dp"
             android:layout_marginStart="30dp"/>
 
@@ -65,6 +74,7 @@
         android:id="@+id/bottomNav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#E5E4E2"
         app:menu="@menu/bottom_nav"/>
 
 </LinearLayout>

@@ -22,7 +22,7 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 //                Create an object of the intent class
-                Intent objIntent = new Intent(SignupActivity.this, MainActivity.class);
+                Intent objIntent = new Intent(SignupActivity.this, LoginActivity.class);
 
 //                Start the activity
                 startActivity(objIntent);

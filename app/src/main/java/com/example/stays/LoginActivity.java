@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 //            Create an intent object
-                Intent objIntent = new Intent(MainActivity.this, SignupActivity.class);
+                Intent objIntent = new Intent(LoginActivity.this, SignupActivity.class);
 //            Start the Activity
                 startActivity(objIntent);
             }
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 //                Check for correctness of username and password
 
                 //            Create an intent object
-                Intent objLoginIntent = new Intent(MainActivity.this, HomeActivity.class);
+                Intent objLoginIntent = new Intent(LoginActivity.this, HomeActivity.class);
 //            Start the Activity
                 startActivity(objLoginIntent);
             }
